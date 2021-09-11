@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="77387320-ebc5-426d-81f4-7e4604c8024d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/YR's/q1-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/YR's/q1-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/answer2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/answer2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -161,6 +160,8 @@
       <workItem from="1631260269038" duration="3329000" />
       <workItem from="1631263678178" duration="228000" />
       <workItem from="1631271806330" duration="10983000" />
+      <workItem from="1631285702871" duration="12000" />
+      <workItem from="1631285774608" duration="10000" />
     </task>
     <servers />
   </component>

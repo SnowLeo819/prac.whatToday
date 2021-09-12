@@ -19,7 +19,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
-    <title>활동테스트</title>
+    <title>오늘 뭐하지!?</title>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
     <style>
         * {
@@ -373,43 +373,51 @@
             font-size: 18px;
             color: #0080FF;
         }
-
-        /*input{*/
-        /*    display: none;*/
-        /*}*/
-        /*label {*/
-        /*    width: 70px;*/
-        /*    height: 35px;*/
-        /*    background-color: #ccc;*/
-        /*    display: block;*/
-        /*    border-radius: 30px;*/
-        /*    position: relative;*/
-        /*    transition: 0.5s;*/
-        /*    box-shadow: inset 3px 3px 2px rgba(0,0,0,.2);*/
-        /*    cursor:pointer;*/
-        /*}*/
-        /*label span{*/
-        /*    display: block;*/
-        /*    width: 25px;*/
-        /*    height: 25px;*/
-        /*    background-color: #fff;*/
-        /*    border-radius: 50%;*/
-        /*    position: absolute;*/
-        /*    top: 50%;*/
-        /*    left: 5px;*/
-        /*    transform: translateY(-50%);*/
-        /*    transition: 0.5s;*/
-        /*    box-shadow: 2px 2px 2px rgba(0,0,0,.2);*/
-        /*}*/
-        /*input:checked + label {*/
-        /*    background: #ffcc33;*/
-        /*}*/
-        /*input:checked + label span {*/
-        /*    left: calc(100% - 30px);*/
-        /*}*/
     </style>
+
     <script>
-        
+        $(document).ready(function () {
+            getQuiz(1);
+        })
+
+        let idx = 1
+        let ans = '';
+
+        // 퀴즈 내용을 불러오는 명령 getQuiz() 'GET'
+        function getQuiz(idx) {
+            console.log("%d번째 문제입니다.", idx)
+            $.ajax({
+                url: `/quiz?idx=${idx}`,
+                method: 'GET',
+                success: function (response) {
+                    $('.Question').empty();
+                    let data = response["quiz"][0];
+
+                    console.log(data);
+
+                    $('.Q-num').append(`Q ${data["idx"]}`)
+                    $('.Question').append(`<h2>${data["quiz"]}</h2>`)
+                    $('#type_A').text(`${data["ans_01"]}`)
+                    $('#type_B').text(`${data["ans_02"]}`)
+                    $('#type_C').text(`${data["ans_03"]}`)
+                    $('#type_D').text(`${data["ans_04"]}`)
+
+                }
+            })
+        }
+        // 선택했던 내용을 기억하는 명령
+        function ans_click(x) {
+            console.log("%s 선택.", x)
+            ans += x;
+            idx += 1;
+            if (idx > 6) {
+                alert("최종 응답 유형은 " + ans)
+                location.href = `/answer?type=${ans}`;
+                return;
+            }
+            getQuiz(idx, x)
+        }
+
     </script>
 </head>
 <body>
@@ -422,39 +430,39 @@
     </div>
     <div class="wrap">
         <hr style="border: 0; margin: 0 0 10px 0; color: lightslategray;">
-        <h1 class="Question">
+        <div class="Question">
             <a class="Q-num">Q1.</a>
             <a class="Q-2">코시국 종료!</a>
             <p class="Q-3">제일 먼저 가고싶은 여행지는?</p>
-        </h1>
-        <div class="img1" id="A"></div>
+        </div>
+        <div class="img1" onclick="ans_click('A');"></div>
         <div class="img1_box">
             <div class="img1_desc_box">
-                <div class="img1_desc">
-                    멋진 야경을 감상할 수 있는<p><span class="span">미국 뉴욕</span></p>
+                <div class="img1_desc" id="type_A">
+                    <p>멋진 야경을 감상할 수 있는<span>미국 뉴욕</span></p>
                 </div>
             </div>
         </div>
-        <div class="img2" id="B"></div>
+        <div class="img2" onclick="ans_click('B');"></div>
         <div class="img2_box">
             <div class="img2_desc_box">
-                <div class="img2_desc">
+                <div class="img2_desc" id="type_B">
                     다양한 액티비티가 가능한<p><span class="span">스위스</span></p>
                 </div>
             </div>
         </div>
-        <div class="img3" id="C"></div>
+        <div class="img3" onclick="ans_click('C');"></div>
         <div class="img3_box">
                 <div class="img3_desc_box">
-                    <div class="img3_desc">
+                    <div class="img3_desc" id="type_C">
                         우아한 만찬과 낭만의 도시<p><span class="span">프랑스 파리</span></p>
                     </div>
                 </div>
         </div>
-        <div class="img4" id="D"></div>
+        <div class="img4" onclick="ans_click('D');"></div>
         <div class="img4_box">
             <div class="img4_desc_box">
-                <div class="img4_desc">
+                <div class="img4_desc" id="type_D">
                     바다를 보며 휴식 할 수 있는<p><span class="span">괌</span></p>
                 </div>
             </div>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>오늘 뭐하지!?</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,6 +82,9 @@
             top: 73px;
             margin: auto;
             display: block;
+
+            z-index: 1;
+
         }
 
         .result {
@@ -234,6 +238,12 @@
 
     </style>
 
+    <script>
+        function hey() {
+            $('#btn-mainpic').hide()
+        }
+    </script>
+
 
 </head>
 <body>
@@ -245,8 +255,8 @@
     <div>
 
     </div>
-    <img src=""
-         class="mainpic"/>
+    <img src="img/netflix.png"
+         onclick="hey()" id="btn-mainpic" class="mainpic"/>
     <div class="result">
         <div class="ans"> A.</div>
         <div class="recommend"> 당신에게 추천하는 활동은? <br> <span style="font-size: 25px; font-family: 'Jua', sans-serif;">“ 오감만족! 넷플릭스 시청하기 ”</span></div>

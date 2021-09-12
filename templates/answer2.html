@@ -155,8 +155,41 @@
 
 
     </style>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+
+
 </head>
 <body>
+
+<script type="text/javascript">
+    function sendLink() {
+        Kakao.init('0cdf182d598f376411474229aa97a77f')
+        Kakao.Link.sendDefault({
+            objectType: 'feed',
+            content: {
+                title: '오늘 뭐하지!?',
+                description: '#오늘뭐하지!? #한가한데할거없을때 #진짜할거없을때 #킬링타임',
+                imageUrl:
+                    'https://images.unsplash.com/photo-1584907797015-7554cd315667?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80',
+                link: {
+                    mobileWebUrl: 'https://developers.kakao.com',
+                    webUrl: 'https://developers.kakao.com',
+                },
+            },
+            buttons: [
+                {
+                    title: '테스트 하러 가기',
+                    link: {
+                        mobileWebUrl: 'https://developers.kakao.com',
+                        webUrl: 'https://developers.kakao.com',
+                    },
+                },
+
+            ],
+        })
+    }
+</script>
+
 <div class="main_block">
     <div class="top">
         <div class="profile"></div>
@@ -251,11 +284,13 @@
             <img class="logo" style="width: 33px; height: 33px; float: right;"
                  src="https://cdn-icons-png.flaticon.com/512/2985/2985049.png"/>
             <img class="logo" style="width: 33px; height: 33px; float: right;"
-                 src="https://cdn-icons-png.flaticon.com/512/3989/3989188.png">
+                 src="https://cdn-icons-png.flaticon.com/512/3989/3989188.png" onclick="sendLink()">
         </div>
         <div class="like">좋아요 4개</div>
         <div class="comment">#선택은사진을눌러주세용 #코시국빨리끝나라 #눈치챙겨</div>
     </div>
+
+
 </div>
 </body>
 </html>

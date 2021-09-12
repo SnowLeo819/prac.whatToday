@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>오늘 뭐하지!?</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'IBM Plex Sans KR', sans-serif;
+        }
+        body {
+            background-color: #FFEEE4;
+        }
+
+        .main_block {
+            position: relative;
+            width: 491px;
+            height: 872px;
+
+            background: #FFFFFF;
+            border: 1px solid #E0E3DA;
+            box-sizing: border-box;
+            margin: 30px auto 0px auto;
+        }
+
+        .profile {
+            position: absolute;
+            width: 47px;
+            height: 45px;
+            left: 15px;
+            top: 16px;
+
+        }
+
+        .username {
+            position: absolute;
+            width: 194px;
+            height: 41px;
+            left: 83px;
+            top: 18px;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 23px;
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+        }
+        .follower {
+            position: absolute;
+            width: 194px;
+            height: 41px;
+            left: 83px;
+            top: 78px;
+            font-weight: bold;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+
+        }
+        .follwing {
+            position: absolute;
+            width: 194px;
+            height: 41px;
+            left: 320px;
+            top: 78px;
+            font-weight: bold;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+
+            color: #7C7877;
+
+        }
+        .line {
+            margin-top: 120px;
+            color: #7C7877;
+        }
+        .line2 {
+            background-color: black;
+            width: 50%;
+            margin-left: 0;
+            margin-top: -20px;
+        }
+        .namecard1 {
+            position: absolute;
+            width: 489px;
+            height: 100px;
+        }
+        .profile1 {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            border-radius: 100px;
+            background-color: lightslategray;
+            top: 19px;
+            left: 15px;
+        }
+        .name1 {
+            position: relative;
+            left: 100px;
+            bottom: 35px;
+            font-size: 17px;
+        }
+        .intro1 {
+            position: relative;
+            left: 100px;
+            bottom: 50px;
+            font-size: 17px;
+            color: #7C7877;
+        }
+        .namecard2 {
+            position: absolute;
+            width: 489px;
+            height: 100px;
+            margin-top: 120px;
+        }
+        .profile2 {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            border-radius: 100px;
+            background-color: lightslategray;
+            top: 19px;
+            left: 15px;
+        }
+        .name2 {
+            position: relative;
+            left: 100px;
+            bottom: 35px;
+            font-size: 17px;
+        }
+        .intro2 {
+            position: relative;
+            left: 100px;
+            bottom: 50px;
+            font-size: 17px;
+            color: #7C7877;
+        }
+        .namecard3 {
+            position: absolute;
+            width: 489px;
+            height: 100px;
+            margin-top: 240px;
+        }
+        .profile3 {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            border-radius: 100px;
+            background-color: lightslategray;
+            top: 19px;
+            left: 15px;
+        }
+        .name3 {
+            position: relative;
+            left: 100px;
+            bottom: 35px;
+            font-size: 17px;
+        }
+        .intro3 {
+            position: relative;
+            left: 100px;
+            bottom: 50px;
+            font-size: 17px;
+            color: #7C7877;
+        }
+        .namecard4 {
+            position: absolute;
+            width: 489px;
+            height: 100px;
+            margin-top: 360px;
+        }
+        .profile4 {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            border-radius: 100px;
+            top: 19px;
+            left: 15px;
+        }
+        .name4 {
+            position: relative;
+            left: 100px;
+            bottom: 35px;
+            font-size: 17px;
+        }
+        .intro4 {
+            position: relative;
+            left: 100px;
+            bottom: 50px;
+            font-size: 17px;
+            color: #7C7877;
+        }
+
+
+    </style>
+    <script>
+        function tomain() {
+            alert('메인으로!')
+        };
+
+
+    </script>
+
+
+</head>
+<body>
+<div class="main_block">
+    <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbzJ3ec%2FbtreJRwfZbc%2FsWfv7wJPSsKYQCPPqIBuDk%2Fimg.png" class="profile" onclick="tomain()"/>
+    <h3 class="username">what_today</h3>
+    <p class="follower">팔로워 4명</p>
+    <p class="follwing">팔로잉 0명</p>
+    <hr class="line">
+    <hr class="line2">
+    <div class="namecard1">
+        <div class="profile1"></div>
+        <p class="name1">박지형</p>
+        <p class="intro1">소개페이지인데 뭘설명해야할까용</p>
+    </div>
+    <div class="namecard2">
+        <div class="profile2"></div>
+        <p class="name2">박지연</p>
+        <p class="intro2">하고싶은말이나</p>
+    </div>
+    <div class="namecard3">
+        <div class="profile3"></div>
+        <p class="name3">김영래</p>
+        <p class="intro3">티스토리깃헙주소 같은거 넣음되려나</p>
+    </div>
+    <div class="namecard4">
+        <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUSF4k%2FbtreJxEMcMl%2FRiYHpUU0rralunDE0VJXik%2Fimg.png" class="profile4"/>
+        <p class="name4">이솔</p>
+        <p class="intro4">이렇게하는거 맞나 모르것네~~~~~~~~</p>
+    </div>
+
+</div>
+
+
+</body>
+</html>

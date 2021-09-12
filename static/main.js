@@ -5,9 +5,10 @@ $(document).ready(function () {
 let idx = 1
 let ans = '';
 
-// 퀴즈 내용을 불러오는 명령
+// 퀴즈 내용을 불러오는 명령 getQuiz() 'GET'
+
 function getQuiz(idx) {
-    console.log("%d 문제입니다.", idx)
+    console.log("%d번째 문제입니다.", idx)
     $.ajax({
         url: `/quiz?idx=${idx}`,
         method: 'GET',

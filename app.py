@@ -14,11 +14,15 @@ def home():
 
 @app.route('/Question', methods=['GET'])
 def Question():
-    return render_template('q1.html')
+    return render_template('question.html')
 
 @app.route('/answer', methods=['GET'])
 def result():
     return render_template('answer.html')
+
+@app.route('/aboutus', methods=['GET'])
+def aboutus():
+    return render_template('aboutus.html')
 
 # =======================
 
@@ -35,10 +39,6 @@ def getQuiz():
 def findDB(idx):
     data = list(db.qna.find({"idx": int(idx)}, {'_id': False}))
     return data
-
-@app.route('/aboutus', methods=['GET'])
-def aboutus():
-    return render_template('aboutus.html')
 
 # 결과지 가져오기
 # @app.route('/ans', methods=['GET'])
@@ -59,4 +59,4 @@ def aboutus():
 #     app.run('0.0.0.0', port=5000, debug=True, use_reloader=False)
 
 if __name__ == '__main__':
-   app.run('0.0.0.0', port=5000, debug=True, use_reloader=False)
+   app.run('0.0.0.0', port=5000, debug=True)

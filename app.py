@@ -20,6 +20,10 @@ def Question():
 def result():
     return render_template('answer.html')
 
+@app.route('/aboutus', methods=['GET'])
+def aboutus():
+    return render_template('aboutus.html')
+
 # =======================
 
 # 퀴즈정보가 있으면 findDB로 연결(idx 번호롤 판단) / 다음 퀴즈 없는경우(idx번호 없을 때) 실패 반환
@@ -29,16 +33,16 @@ def getQuiz():
     if idx is not None:
         data = findDB(idx)
         return jsonify({'result': 'success', 'quiz': data})
-    return jsonify({'result': 'fail'})
+
+    data = list(db.qna.find({}, {'_id': False}))
+    return jsonify({'result': 'success', 'quiz': data})
 
 # DB에서 퀴즈 정보 가져오기
 def findDB(idx):
     data = list(db.qna.find({"idx": int(idx)}, {'_id': False}))
     return data
 
-@app.route('/aboutus', methods=['GET'])
-def aboutus():
-    return render_template('aboutus.html')
+
 
 # 결과지 가져오기
 # @app.route('/ans', methods=['GET'])
@@ -59,4 +63,4 @@ def aboutus():
 #     app.run('0.0.0.0', port=5000, debug=True, use_reloader=False)
 
 if __name__ == '__main__':
-   app.run('0.0.0.0', port=5000, debug=True, use_reloader=False)
+   app.run('0.0.0.0', port=5000, debug=True)

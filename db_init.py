@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 client = MongoClient('localhost', 27017)
-db = client.perf_it
+db = client.what_today
 
 db.qna.drop();
 db.ans.drop();

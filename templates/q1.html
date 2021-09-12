@@ -194,8 +194,9 @@
             line-height: 25px;
         }
 
-        .span {
-            font-weight: bold;
+        span {
+            font-weight: bolder;
+
         }
 
         .img2 {
@@ -390,19 +391,31 @@
 
                     $('.Question').append(`<h2 class ="Q-num" > Q${data["idx"]}.</h2> <h2 class ="Q-2"  >${data["quiz"]}</h2>`)
 
-                    let tempHtml = ``
-                    $('#type_A').text(`${data["ans_01"]}`)
-                    $('#type_B').text(`${data["ans_02"]}`)
-                    $('#type_C').text(`${data["ans_03"]}`)
-                    $('#type_D').text(`${data["ans_04"]}`)
 
+                    $('#type_A').html(makeHtml(`${data["ans_01"]}`))
+                    $('#type_B').html(makeHtml(`${data["ans_02"]}`))
+                    $('#type_C').html(makeHtml(`${data["ans_03"]}`))
+                    $('#type_D').html(makeHtml(`${data["ans_04"]}`))
                 }
             })
+        }
+
+        function makeHtml(data){
+            let tempHtml =`
+              <p> ${data} </p>
+            `
+            return tempHtml;
         }
 
         // 선택했던 내용을 기억하는 명령
         function ans_click(x) {
             console.log("%s 선택.", x)
+
+            let cel = idx/6 *100
+            console.log(cel)
+
+            document.getElementById('progress-bar').style.width= `${cel}%`
+            
             ans += x;
             idx += 1;
             if (idx > 6) {
@@ -410,6 +423,9 @@
                 location.href = `/answer?type=${ans}`;
                 return;
             }
+
+            {#let pgs = document.getElementsByClassName("progress-bar");#}
+            {#pgs.style.width = "50%"#}
             getQuiz(idx, x)
         }
 
@@ -466,7 +482,7 @@
       </div>
       <div class="dot">
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 16.6666666667%" aria-valuenow="25"
+          <div class="progress-bar"  id="progress-bar" role="progressbar" style="width: 0" aria-valuenow="0"
                aria-valuemin="0"
                aria-valuemax="100"></div>
         </div>

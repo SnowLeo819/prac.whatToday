@@ -40,6 +40,12 @@ ansDoc = [
     # 'suggest2': '', 'img-link2': '', 'title2': '', 'genre2': '', 'info2':'', 'director2':'', 'link2': ''
     # 'suggest3': '', 'img-link3': '', 'title3': '', 'genre3': '', 'info3':'', 'director3':'', 'link3': ''},
 
+    {'idx': 4, 'type': 'D',
+    'suggest1': '', 'img-link1': 'https://bookthumb-phinf.pstatic.net/cover/206/535/20653532.jpg?type=m1&udate=20210912', 'title1': '오케팅', 'genre1': '특별하지 않아도 누구나 5% 부자가 되는 전략', 'info1':'대한출판사', 'director1':'오두환', 'link1': 'https://book.naver.com/bookdb/book_detail.nhn?bid=20653532',
+    'suggest2': '', 'img-link2': 'https://bookthumb-phinf.pstatic.net/cover/196/181/19618143.jpg?type=m1&udate=20210912', 'title2': '소크라테스 익스프레스', 'genre2': '철학이 우리 인생에 스며드는 순간', 'info2':'어크로스', 'director2':'에릭 와이너', 'link2': 'https://book.naver.com/bookdb/book_detail.nhn?bid=19618143',
+    'suggest3': '', 'img-link3': 'https://bookthumb-phinf.pstatic.net/cover/207/771/20777131.jpg?type=m1&udate=20210912', 'title3': '달러구트 꿈 백화점2', 'genre3': '단골손님을 찾습니다', 'info3':'팩토리나인', 'director3':'이미예', 'link3': 'http://book.naver.com/bookdb/book_detail.nhn?bid=20777131'},
+
+
 
     {'idx': 1, 'type': 'A', 'suggest': '“ 근손실 방지! 홈트하자~”', 'name': '전신 다이어트 유산소운동 [홈트레이닝]', 'subname': '르라보 어나더 13 EDP',
      'desc': ' 암브록스, 자스민, 이끼, 암브레트 시드 등의 열 세가지 원료들이 섞여 중독성 있는 우디 머스크 계열의 향', 'keyword': ['포근한', '편안한', '성숙한']},

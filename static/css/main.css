@@ -1,0 +1,237 @@
+
+* {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+body {
+    background-color: #FFEEE4;
+}
+
+.main_block {
+    position: relative;
+    width: 491px;
+    height: 872px;
+
+    background: #FFFFFF;
+    border: 1px solid #E0E3DA;
+    box-sizing: border-box;
+    margin: 30px auto 0px auto;
+}
+
+.profile {
+    position: absolute;
+    width: 47px;
+    height: 45px;
+    left: 15px;
+    top: 16px;
+
+    border-radius: 100px;
+
+}
+
+.username {
+    position: absolute;
+    width: 194px;
+    height: 41px;
+    left: 83px;
+    top: 18px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.openmore {
+    position: absolute;
+    width: 28px;
+    height: 18px;
+    left: 443px;
+    top: 27px;
+}
+
+.mainpic {
+    position: absolute;
+    width: 489px;
+    height: 379px;
+    top: 73px;
+    margin: auto;
+    display: block;
+}
+
+.heartpic {
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    left: 19px;
+    top: 473px;
+}
+
+.speechbub {
+    position: absolute;
+    width: 30px;
+    height: 35px;
+    left: 69px;
+    top: 473px;
+
+}
+
+.paperplane {
+    position: absolute;
+    width: 30px;
+    height: 35px;
+    left: 113px;
+    top: 473px;
+
+}
+
+.bookmark {
+    position: absolute;
+    width: 41px;
+    height: 30px;
+    left: 440px;
+    top: 470px;
+
+}
+
+.liketext {
+    position: absolute;
+    width: 175px;
+    height: 23px;
+    left: 19px;
+    top: 521px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.username2 {
+    position: absolute;
+    width: 113px;
+    height: 46px;
+    left: 19px;
+    top: 544px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.tagtitle {
+    position: absolute;
+    width: 357px;
+    height: 46px;
+    left: 123px;
+    top: 557px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    /* or 139% */
+
+    display: flex;
+    align-items: center;
+
+    color: #0080FF;
+}
+
+.morepage {
+    position: absolute;
+    width: 113px;
+    height: 46px;
+    left: 237px;
+    top: 570px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: black;
+    clip: rect(0 0 0 0);
+}
+
+.startbtn {
+    position: absolute;
+    width: 457px;
+    height: 78px;
+    left: 19px;
+    top: 642px;
+    border-radius: 10px;
+    font-size: 35px;
+}
+
+.readmore {
+    position: absolute;
+    width: 113px;
+    height: 46px;
+    left: 237px;
+    top: 570px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #7C7877;
+
+
+}
+
+.hiddentag {
+    position: absolute;
+    width: 113px;
+    height: 46px;
+    left: 237px;
+    top: 570px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #0080FF;
+    white-space: nowrap;
+    visibility: hidden;
+}
+
+.breathe {
+    position: absolute;
+    width: 30px;
+    height: 35px;
+    left: 133px;
+    top: 473px;
+    visibility: hidden;
+}
+
+.showmore {
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    left: 460px;
+    top: 40px;
+    border: thin solid lightslategray;
+    background-color: white;
+    z-index: 1;
+
+    visibility: hidden;
+}
+

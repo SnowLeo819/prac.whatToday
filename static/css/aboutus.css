@@ -1,0 +1,266 @@
+
+* {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+body {
+    background-color: #FFEEE4;
+}
+
+.main_block {
+    position: relative;
+    width: 491px;
+    height: 872px;
+
+    background: #FFFFFF;
+    border: 1px solid #E0E3DA;
+    box-sizing: border-box;
+    margin: 30px auto 0px auto;
+}
+
+.profile {
+    position: absolute;
+    width: 47px;
+    height: 45px;
+    left: 15px;
+    top: 16px;
+
+}
+
+.username {
+    position: absolute;
+    width: 194px;
+    height: 41px;
+    left: 83px;
+    top: 18px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.follower {
+    position: absolute;
+    width: 194px;
+    height: 41px;
+    left: 83px;
+    top: 78px;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+}
+
+.follwing {
+    position: absolute;
+    width: 194px;
+    height: 41px;
+    left: 320px;
+    top: 78px;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+
+    color: #7C7877;
+
+}
+
+.line {
+    margin-top: 120px;
+    color: #7C7877;
+}
+
+.line2 {
+    background-color: black;
+    width: 50%;
+    margin-left: 0;
+    margin-top: -20px;
+}
+
+.namecard1 {
+    position: absolute;
+    width: 489px;
+    height: 100px;
+}
+
+.profile1 {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: lightslategray;
+    top: 19px;
+    left: 15px;
+}
+
+.name1 {
+    position: relative;
+    left: 100px;
+    bottom: 35px;
+    font-size: 17px;
+}
+
+.intro1 {
+    position: relative;
+    left: 100px;
+    bottom: 50px;
+    font-size: 15px;
+    color: #7C7877;
+}
+
+.namecard2 {
+    position: absolute;
+    width: 489px;
+    height: 100px;
+    margin-top: 120px;
+}
+
+.profile2 {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: lightslategray;
+    top: 19px;
+    left: 15px;
+}
+
+.name2 {
+    position: relative;
+    left: 100px;
+    bottom: 45px;
+    font-size: 17px;
+}
+
+.intro2 {
+    position: relative;
+    left: 100px;
+    bottom: 60px;
+    font-size: 14px;
+    color: #7C7877;
+}
+
+.namecard3 {
+    position: absolute;
+    width: 489px;
+    height: 100px;
+    margin-top: 240px;
+}
+
+.profile3 {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: 1px solid lightsteelblue;
+    top: 19px;
+    left: 15px;
+}
+
+.name3 {
+    position: relative;
+    left: 100px;
+    bottom: 41px;
+    font-size: 17px;
+}
+
+.intro3 {
+    position: relative;
+    left: 100px;
+    bottom: 55px;
+    font-size: 15px;
+    color: #7C7877;
+}
+
+.namecard4 {
+    position: absolute;
+    width: 489px;
+    height: 100px;
+    margin-top: 360px;
+}
+
+.profile4 {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    top: 19px;
+    left: 15px;
+}
+
+.name4 {
+    position: relative;
+    left: 100px;
+    bottom: 35px;
+    font-size: 17px;
+}
+
+.intro4 {
+    position: relative;
+    left: 100px;
+    bottom: 50px;
+    font-size: 15px;
+    color: #7C7877;
+}
+
+.div2 {
+    position: relative;
+    width: 350px;
+    height: 70px;
+}
+
+.div3 {
+    position: relative;
+    width: 350px;
+    height: 70px;
+}
+
+.link1 {
+    position: relative;
+    width: 70px;
+    height: 30px;
+    left: 410px;
+    bottom: 105px;
+    line-height: 17px;
+    font-size: 15px;
+}
+
+.link2 {
+    position: relative;
+    width: 70px;
+    height: 30px;
+    left: 410px;
+    bottom: 135px;
+    line-height: 17px;
+    font-size: 15px;
+}
+
+.link3 {
+    position: relative;
+    width: 70px;
+    height: 30px;
+    left: 410px;
+    bottom: 135px;
+    line-height: 17px;
+    font-size: 15px;
+
+}
+
+.link4 {
+    position: relative;
+    width: 70px;
+    height: 30px;
+    left: 410px;
+    bottom: 105px;
+    line-height: 17px;
+    font-size: 15px;
+}
+
+

@@ -1,0 +1,226 @@
+* {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+body {
+    background-color: #FFEEE4;
+}
+
+.main_block {
+    position: relative;
+    width: 491px;
+    height: 872px;
+    margin: 30px auto 0px auto;
+    background: #FFFFFF;
+    border: 1px solid #E0E3DA;
+    box-sizing: border-box;
+}
+
+.profile {
+    position: absolute;
+    width: 47px;
+    height: 45px;
+    left: 15px;
+    top: 16px;
+    border-radius: 100px;
+}
+
+.username {
+    position: absolute;
+    width: 194px;
+    height: 41px;
+    left: 83px;
+    top: 18px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.more {
+    position: absolute;
+    width: 28px;
+    height: 18px;
+    left: 443px;
+    top: 27px;
+}
+
+.mainpic {
+    position: absolute;
+    width: 489px;
+    height: 557px;
+    top: 162px;
+    margin: auto;
+    display: block;
+
+    z-index: 1;
+
+}
+
+.result {
+    position: absolute;
+    width: 489px;
+    height: 648px;
+    left: 0px;
+    top: 71px;
+
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.ans {
+    position: absolute;
+    width: 35px;
+    height: 54px;
+    left: 53px;
+    top: 20px;
+
+    font-family: 'Jua', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 25px;
+    /* or 71% */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.recommend {
+    position: absolute;
+    width: 370.86px;
+    height: 48px;
+    left: 105.14px;
+    top: 20px;
+
+    font-family: 'Jua', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+
+
+    align-items: center;
+
+    color: #000000;
+}
+
+.card {
+    position: absolute;
+    width: 489px;
+    height: 500px;
+    left: 0px;
+    top: 110px;
+
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.cardbox {
+    width: 388.69px;
+    height: 143.5px;
+
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+
+    margin: 10px auto;
+}
+
+.num {
+    width: 42.96px;
+    height: 120px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    margin: 0 15px;
+    float: left;
+}
+
+.content {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+
+    align-items: center;
+
+    color: #000000;
+    margin: 20px 0;
+    float: left;
+}
+
+.content-img {
+    width: 100px;
+    height: 125px;
+
+    float: right;
+    margin: 9px 20px;
+}
+
+.bottom {
+    position: relative;
+    font-size: 18px;
+    width: 485px;
+    height: 110px;
+    margin-top: 73px;
+    padding: 0 15px 0 15px;
+    top: 670px;
+
+}
+
+.logo {
+    margin: 5px;
+}
+
+.liketext {
+    position: absolute;
+    width: 96px;
+    height: 23px;
+    left: 20px;
+    margin-top: 9px;
+    font-size: 18px;
+}
+
+.comment {
+    position: absolute;
+    width: 350px;
+    height: 45px;
+    left: 116px;
+    margin-top: 9px;
+    font-size: 18px;
+    color: #0080FF;
+}
+
+
+.breathe {
+    position: absolute;
+    width: 30px;
+    height: 35px;
+    top: 748px;
+    left: 134px;
+    visibility: hidden;
+
+}
+
+#paperplane {
+    cursor: pointer
+}
+

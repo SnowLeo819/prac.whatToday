@@ -296,6 +296,7 @@
             position: absolute;
             left: 15px;
             top: 16px;
+            right: 15px;
             text-align: center;
             font-style: normal;
             font-weight: normal;
@@ -387,6 +388,11 @@
                     $('#type_B').html(makeHtml(`${data["ans_02"]}`))
                     $('#type_C').html(makeHtml(`${data["ans_03"]}`))
                     $('#type_D').html(makeHtml(`${data["ans_04"]}`))
+
+                    $('#img_A').css('background-image', `url(${(data["ans_img01"])})`)
+                    $('#img_B').css('background-image', `url(${(data["ans_img02"])})`)
+                    $('#img_C').css('background-image', `url(${(data["ans_img03"])})`)
+                    $('#img_D').css('background-image', `url(${(data["ans_img04"])})`)
                 }
             })
         }
@@ -450,7 +456,7 @@
           <p class="Q-3">제일 먼저 가고싶은 여행지는?</p>
         </div>
 
-        <div class="img1" onclick="ans_click('A');"></div>
+        <div class="img1" onclick="ans_click('A');" id="img_A"></div>
         <div class="img1_box">
           <div class="img1_desc_box">
             <div class="img1_desc" id="type_A">
@@ -458,7 +464,7 @@
             </div>
           </div>
         </div>
-        <div class="img2" onclick="ans_click('B');"></div>
+        <div class="img2" onclick="ans_click('B');" id="img_B"></div>
         <div class="img2_box">
           <div class="img2_desc_box">
             <div class="img2_desc" id="type_B">
@@ -466,7 +472,7 @@
             </div>
           </div>
         </div>
-        <div class="img3" onclick="ans_click('C');"></div>
+        <div class="img3" onclick="ans_click('C');" id="img_C"></div>
         <div class="img3_box">
           <div class="img3_desc_box">
             <div class="img3_desc" id="type_C">
@@ -474,7 +480,7 @@
             </div>
           </div>
         </div>
-        <div class="img4" onclick="ans_click('D');"></div>
+        <div class="img4" onclick="ans_click('D');" id="img_D"></div>
         <div class="img4_box">
           <div class="img4_desc_box">
             <div class="img4_desc" id="type_D">

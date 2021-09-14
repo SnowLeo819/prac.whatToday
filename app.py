@@ -1,31 +1,36 @@
 from flask import Flask, render_template, request, jsonify
 from pymongo import MongoClient
+
 app = Flask(__name__)
 
 client = MongoClient('localhost', 27017)
 db = client.what_today
+
 
 ## URL 별로 함수명이 같거나,
 ## route('/') 등의 주소가 같으면 안됩니다.
 
 @app.route('/', methods=['GET'])
 def home():
-   return render_template('main.html')
+    return render_template('main.html')
+
 
 @app.route('/Question', methods=['GET'])
-def Question():
+def question():
     return render_template('question.html')
+
 
 @app.route('/answer', methods=['GET'])
 def result():
     return render_template('answer.html')
 
+
 @app.route('/aboutus', methods=['GET'])
 def aboutus():
     return render_template('aboutus.html')
 
-# =======================
 
+# =======================
 # 퀴즈정보가 있으면 findDB로 연결(idx 번호롤 판단) / 다음 퀴즈 없는경우(idx번호 없을 때) 실패 반환
 @app.route('/quiz', methods=['GET'])
 def getQuiz():
@@ -35,10 +40,13 @@ def getQuiz():
         return jsonify({'result': 'success', 'quiz': data})
     return jsonify({'result': 'fail'})
 
+
+
 # DB에서 퀴즈 정보 가져오기
 def findDB(idx):
     data = list(db.qna.find({"idx": int(idx)}, {'_id': False}))
     return data
+
 
 # 결과지 가져오기
 # @app.route('/ans', methods=['GET'])
@@ -59,4 +67,4 @@ def findDB(idx):
 #     app.run('0.0.0.0', port=5000, debug=True, use_reloader=False)
 
 if __name__ == '__main__':
-   app.run('0.0.0.0', port=5000, debug=True)
+    app.run('0.0.0.0', port=5000, debug=True)

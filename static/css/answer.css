@@ -125,18 +125,17 @@ body {
 
 .map_img {
     position: absolute;
-    top: 50px;
+    top: 110px;
 
     background-color: #0080FF;
 
     z-index: 1;
 
 .btn {
-    position: absolute;
-    width: 100px;
-    height: 50px;
+    position: relative;
 
     top: 600px;
+    left: 200px;
 }
 
 }

@@ -123,20 +123,14 @@ body {
     border-color: transparent;
 }
 
-.map_img {
-    position: absolute;
-    top: 110px;
-
+.map {
     background-color: #0080FF;
 
+    position: absolute;
+    left: 40px;
+
     z-index: 1;
-}
 
-.btn {
-    position: relative;
-
-    top: 600px;
-    left: 200px;
 }
 
 

@@ -67,7 +67,8 @@
 </script>
 
 <div class="main_block">
-    <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUSF4k%2FbtreJxEMcMl%2FRiYHpUU0rralunDE0VJXik%2Fimg.png" class="profile"/>
+    <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUSF4k%2FbtreJxEMcMl%2FRiYHpUU0rralunDE0VJXik%2Fimg.png"
+         class="profile"/>
     <h3 class="username">what_today</h3>
     <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDI2LjY2NyA0MjYuNjY3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0MjYuNjY3IDQyNi42Njc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8Y2lyY2xlIGN4PSI0Mi42NjciIGN5PSIyMTMuMzMzIiByPSI0Mi42NjciLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPGNpcmNsZSBjeD0iMjEzLjMzMyIgY3k9IjIxMy4zMzMiIHI9IjQyLjY2NyIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8Y2lyY2xlIGN4PSIzODQiIGN5PSIyMTMuMzMzIiByPSI0Mi42NjciLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg=="
          class="more"/>
@@ -81,6 +82,95 @@
         <div class="recommend"> 당신에게 추천하는 활동은? <br> <span style="font-size: 25px; font-family: 'Jua', sans-serif;">“ 오감만족! 넷플릭스 시청하기 ”</span>
         </div>
         <div class="card">
+
+            <div class="map_img" id="map" style="width:489px;height:489px;"></div>
+            <button onclick="getCurrentPosBtn()" class="btn">내 위치</button>
+
+            <script type="text/javascript"
+                    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9ceb7c747ef9c1394875b09bcc8fc8a2&libraries=services"></script>
+            <script>
+                // 마커를 클릭하면 장소명을 표출할 인포윈도우 입니다
+                var infowindow = new kakao.maps.InfoWindow({zIndex: 1});
+
+                var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+                    mapOption = {
+                        center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
+                        level: 3 // 지도의 확대 레벨
+                    };
+
+                // 지도를 생성합니다
+                var map = new kakao.maps.Map(mapContainer, mapOption);
+
+                // 장소 검색 객체를 생성합니다
+                var ps = new kakao.maps.services.Places();
+
+                // 키워드로 장소를 검색합니다
+                ps.keywordSearch('산책로', placesSearchCB);
+
+                // 키워드 검색 완료 시 호출되는 콜백함수 입니다
+                function placesSearchCB(data, status, pagination) {
+                    if (status === kakao.maps.services.Status.OK) {
+
+                        // 검색된 장소 위치를 기준으로 지도 범위를 재설정하기위해
+                        // LatLngBounds 객체에 좌표를 추가합니다
+                        var bounds = new kakao.maps.LatLngBounds();
+
+                        for (var i = 0; i < data.length; i++) {
+                            displayMarker(data[i]);
+                            bounds.extend(new kakao.maps.LatLng(data[i].y, data[i].x));
+                        }
+
+                        // 검색된 장소 위치를 기준으로 지도 범위를 재설정합니다
+                        map.setBounds(bounds);
+                    }
+                }
+
+                // 지도에 마커를 표시하는 함수입니다
+                function displayMarker(place) {
+
+                    // 마커를 생성하고 지도에 표시합니다
+                    var marker = new kakao.maps.Marker({
+                        map: map,
+                        position: new kakao.maps.LatLng(place.y, place.x)
+                    });
+
+                    // 마커에 클릭이벤트를 등록합니다
+                    kakao.maps.event.addListener(marker, 'click', function () {
+                        // 마커를 클릭하면 장소명이 인포윈도우에 표출됩니다
+                        infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name + '</div>');
+                        infowindow.open(map, marker);
+                    });
+                }
+
+                function locationLoadSuccess(pos) {
+                    // 현재 위치 받아오기
+                    var currentPos = new kakao.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
+
+                    // 지도 이동(기존 위치와 가깝다면 부드럽게 이동)
+                    map.panTo(currentPos);
+
+                    // 마커 생성
+                    var marker = new kakao.maps.Marker({
+                        position: currentPos
+                    });
+
+                    // 기존에 마커가 있다면 제거
+                    marker.setMap(null);
+                    marker.setMap(map);
+                };
+
+                function locationLoadError(pos) {
+                    alert('위치 정보를 가져오는데 실패했습니다.');
+                };
+
+                // 위치 가져오기 버튼 클릭시
+                function getCurrentPosBtn() {
+                    navigator.geolocation.getCurrentPosition(locationLoadSuccess, locationLoadError);
+                };
+
+            </script>
+
+
             <div class="cardbox">
                 <div class="num"> 1 <span style="font-size: 20px;">위</span></div>
                 <div class="content">
@@ -135,7 +225,9 @@
         </div>
         <div class="comment">#선택은사진을눌러주세용 #코시국빨리끝나라!! #눈치챙겨</div>
     </div>
-<div><img class="breathe" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbunFqX%2FbtreJQqvMV3%2FJT53gSgpqSiAYLiIxYVHVK%2Fimg.png"/></div>
+    <div><img class="breathe"
+              src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbunFqX%2FbtreJQqvMV3%2FJT53gSgpqSiAYLiIxYVHVK%2Fimg.png"/>
+    </div>
 
 </div>
 

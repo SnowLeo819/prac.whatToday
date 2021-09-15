@@ -241,3 +241,9 @@ body {
     cursor: pointer
 }
 
+.box {
+    width: 423px;
+    height: 54px;
+    top: 20px;
+    left: 46px;
+}

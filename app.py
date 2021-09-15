@@ -25,6 +25,34 @@ def aboutus():
     return render_template('aboutus.html')
 
 # =======================
+#  좋아요 기능 구현하기
+# 좋아요 가져오기
+@app.route('/like', methods=['GET'])
+def showLike():
+    likeCount = list(db.like.find({}, {'_id': False}))
+    return jsonify({'likedb': likeCount})
+
+# 좋아요 수정 +1
+@app.route('/like/+', methods=['POST'])
+def likePlus():
+    targetName = request.form['name_give']
+    targetLike = db.like.find_one({'name': targetName})
+    currentLike = targetLike['count']
+    newLike = currentLike + 1
+    db.like.update_one({'name': targetName}, {'$set': {'count': newLike}})
+    return jsonify({'msg': '좋아요 완료!'})
+
+# 좋아요 수정 -1
+@app.route('/like/-', methods=['POST'])
+def likeMinus():
+    targetName = request.form['name_give']
+    targetLike = db.like.find_one({'name': targetName})
+    currentLike = targetLike['count']
+    newLike = currentLike - 1
+    db.like.update_one({'name': targetName}, {'$set': {'count': newLike}})
+    return jsonify({'msg': '좋아요 취소ㅠㅠ'})
+
+# =======================
 
 # 퀴즈정보가 있으면 findDB로 연결(idx 번호롤 판단) / 다음 퀴즈 없는경우(idx번호 없을 때) 실패 반환
 @app.route('/quiz', methods=['GET'])

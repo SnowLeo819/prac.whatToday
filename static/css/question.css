@@ -321,14 +321,23 @@ body {
     color: #0080FF;
 }
 
+.liketext   {
+    position: absolute;
+    width: 96px;
+    height: 23px;
+    left: 20px;
+    top: 788px;
+    margin-top: 9px;
+    font-size: 18px;
+}
+
 .breathe {
     position: absolute;
     width: 30px;
     height: 35px;
-    top: 5px;
+    top: 748px;
     left: 134px;
     visibility: hidden;
-
 }
 
 #paperplane {

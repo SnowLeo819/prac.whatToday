@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    // readMore()
-    dragon()
     showLike()
+    readMore()
+    dragon()
 });
 
 var cnt = 1;
@@ -23,14 +23,14 @@ function likered() {
     }
 }
 
-// function readMore() {
-//     ('.readmore').click(function () {
-//         if ($('.readmore').hasClass('readmore')) {
-//             $('.readmore').addClass('morepage').removeClass('readmore');
-//             $('.hiddentag').css('visibility', 'visible');
-//         }
-//     });
-// }
+function readMore() {
+    $('.readmore').click(function () {
+        if ($('.readmore').hasClass('readmore')) {
+            $('.readmore').addClass('morepage').removeClass('readmore');
+            $('.hiddentag').css('visibility', 'visible');
+        }
+    });
+}
 
 function dragon() {
 $('.paperplane').click(function () {
@@ -58,7 +58,6 @@ function showLike() {
         }
     });
 }
-
 
 function likePlus() {
     $.ajax({

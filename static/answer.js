@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    // readMore()
     dragon()
     showLike()
 });
@@ -23,17 +22,8 @@ function likered() {
     }
 }
 
-// function readMore() {
-//     ('.readmore').click(function () {
-//         if ($('.readmore').hasClass('readmore')) {
-//             $('.readmore').addClass('morepage').removeClass('readmore');
-//             $('.hiddentag').css('visibility', 'visible');
-//         }
-//     });
-// }
-
 function dragon() {
-$('.paperplane').click(function () {
+$('#paperplane').click(function () {
     if ($('.breathe').hasClass('breathe')) {
         $('.breathe').css('visibility', 'visible');
     }

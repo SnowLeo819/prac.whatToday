@@ -7,7 +7,8 @@
     --color5: #0080FF; /*파랑(시작버튼)*/
     --color6: #0080FF; /*파랑(태그글)*/
     --color7: #E0E3DA; /*라이트그레이 좀더진함(메인박스 테두리)*/
-    --color8: #7C7877; /*aboutus만 팔로잉, 언더라인*/
+    --color8: #7C7877; /*언더라인*/
+    --color9: #7C7877; /*aboutus만 팔로잉*/
 }
 
 :root.dark {
@@ -19,6 +20,7 @@
     --color6: #77919D; /*파랑(태그글)*/
     --color7: #5E5E5F; /*라이트그레이 좀더진함(메인박스 테두리)*/
     --color8: #7C7877; /*aboutus만 팔로잉, 언더라인*/
+    --color9: #ffffff; /*aboutus만 팔로잉*/
 }
 /*======================================*/
 
@@ -128,7 +130,7 @@ body {
     left: 100px;
     bottom: 50px;
     font-size: 15px;
-    color: var(--color8);
+    color: var(--color9);
 }
 
 .namecard2 {
@@ -160,7 +162,7 @@ body {
     left: 100px;
     bottom: 60px;
     font-size: 14px;
-    color: var(--color8);
+    color: var(--color9);
 }
 
 .namecard3 {
@@ -192,7 +194,7 @@ body {
     left: 100px;
     bottom: 55px;
     font-size: 15px;
-    color: var(--color8);
+    color: var(--color9);
 }
 
 .namecard4 {
@@ -223,7 +225,7 @@ body {
     left: 100px;
     bottom: 50px;
     font-size: 15px;
-    color: var(--color8);
+    color: var(--color9);
 }
 
 .div2 {

@@ -7,6 +7,7 @@
     --color5: #0080FF; /*파랑(시작버튼)*/
     --color6: #0080FF; /*파랑(태그글)*/
     --color7: #E0E3DA; /*라이트그레이 좀더진함(메인박스 테두리)*/
+    --color8: #FFFFFF; /*답지 글상자*/
 }
 
 :root.dark {
@@ -15,8 +16,9 @@
     --color3: #FFFFFF; /*흰색(기본글, 좋아요, 공유하기, 다시하기)*/
     --color4: #5E5E5F; /*그레이(메인박스 테두리,질문지바탕)*/
     --color5: #45D9FD; /*파랑(시작버튼)*/
-    --color6: #77919D; /*파랑(태그글)*/
+    --color6: #45D9FD; /*파랑(태그글)*/
     --color7: #5E5E5F; /*라이트그레이 좀더진함(메인박스 테두리)*/
+    --color8: #5E5E5F; /*답지 글상자*/
 }
 /*======================================*/
 
@@ -133,14 +135,14 @@ body {
     position: absolute;
     left: 40px;
     z-index: 1;
-
     border-radius: 10px;
+    visibility: hidden;
 }
 
 .cardbox {
     width: 388.69px;
     height: 143.5px;
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--color8);
     border-radius: 30px;
     margin: 10px auto;
 }
@@ -233,4 +235,8 @@ body {
     height: 54px;
     top: 20px;
     left: 46px;
+}
+
+.genre {
+    color: var(--color6);
 }

@@ -4,6 +4,7 @@ $(document).ready(function () {
     let type = getType()
     let ansType = manyKeyword(type);
     getAns(ansType);
+    // $('.content-img').attr('width', '100'); 이미지 width 수정 test 작동 x
 });
 
 function getType() {
@@ -53,8 +54,10 @@ function getAns(type) {
 
             if (type == 'A') // type A 산책
             {
+                $('#map').show()
             } else if (type == 'B') // type B 홈트
             {
+                $('#map').hide()
                 $('#top1').html(addHtml1(data['title1'], data['info1'], data['director1'], data['img_link1'], data['link1']))
                 $('#top2').html(addHtml2(data['title2'], data['info2'], data['director2'], data['img_link2'], data['link2']))
                 $('#top3').html(addHtml3(data['title3'], data['info3'], data['director3'], data['img_link3'], data['link3']))
@@ -64,7 +67,7 @@ function getAns(type) {
                             <div class="cardbox">
                                 <div class="num"><span style="font-size: 35px; font-weight: normal">1</span>위</div>
                                 <div class="content">
-                                    <span style="font-size: 18px;">${title1}</span>
+                                    <span style="font-size: 17.5px;">${title1}</span>
                                     <br>  <br><br>${info1} <br>${director1}
                                 </div>
                                 <img class="content-img"
@@ -79,7 +82,7 @@ function getAns(type) {
                             <div class="cardbox">
                                 <div class="num"> <span style="font-size: 35px; font-weight: normal">2</span>위</div>
                                 <div class="content">
-                                    <span style="font-size: 18px;">${title2}</span>
+                                    <span style="font-size: 17.5px;">${title2}</span>
                                     <br>  <br><br>${info2} <br>${director2}
                                 </div>
                                 <img class="content-img"
@@ -94,7 +97,7 @@ function getAns(type) {
                             <div class="cardbox">
                                 <div class="num"><span style="font-size: 35px; font-weight: normal">3</span>위</span></div>
                                 <div class="content">
-                                    <span style="font-size: 18px;">${title3}</span>
+                                    <span style="font-size: 17.5px;">${title3}</span>
                                     <br>  <br><br>${info3} <br>${director3}
                                 </div>
                                 <img class="content-img"
@@ -105,6 +108,7 @@ function getAns(type) {
                 }
             } else if (type == 'C') // type C 요리
             {
+                $('#map').hide()
                 $('#top1').html(addHtml1(data['title1'], data['info1'], data['director1'], data['img_link1'], data['link1']))
                 $('#top2').html(addHtml2(data['title2'], data['info2'], data['director2'], data['img_link2'], data['link2']))
                 $('#top3').html(addHtml3(data['title3'], data['info3'], data['director3'], data['img_link3'], data['link3']))
@@ -155,6 +159,7 @@ function getAns(type) {
                 }
             } else if (type == 'D') // type D 독서
             {
+                $('#map').hide()
                 $('#top1').html(addHtml1(data['title1'], data['genre1'], data['info1'], data['director1'], data['img_link1'], data['link1']))
                 $('#top2').html(addHtml2(data['title2'], data['genre2'], data['info2'], data['director2'], data['img_link2'], data['link2']))
                 $('#top3').html(addHtml3(data['title3'], data['genre3'], data['info3'], data['director3'], data['img_link3'], data['link3']))
@@ -205,6 +210,7 @@ function getAns(type) {
                 }
             } else // type F 2,3위 시간 정보가 애매함
             {
+                $('#map').hide()
                 $('#top1').html(addHtml1(data['title1'], data['genre1'], data['info1'], data['director1'], data['img_link1'], data['link1']))
                 $('#top2').html(addHtml2(data['title2'], data['genre2'], data['info2'], data['director2'], data['img_link2'], data['link2']))
                 $('#top3').html(addHtml3(data['title3'], data['genre3'], data['info3'], data['director3'], data['img_link3'], data['link3']))

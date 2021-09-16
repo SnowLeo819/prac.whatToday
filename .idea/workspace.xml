@@ -5,7 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/question.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/answer.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/answer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/question.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/question.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +47,7 @@
       <recent name="C:\Users\jhpak\OneDrive\Desktop\spartaproject\project\static\css" />
     </key>
   </component>
-  <component name="RunManager" selected="Flask server.Flask (app.py)">
+  <component name="RunManager" selected="Python.db_init">
     <configuration name="aboutus.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project/templates/aboutus.html?_ij_reload" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -116,8 +118,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Flask server.Flask (app.py)" />
         <item itemvalue="Python.db_init" />
+        <item itemvalue="Flask server.Flask (app.py)" />
         <item itemvalue="JavaScript Debug.map.html" />
         <item itemvalue="JavaScript Debug.aboutus.html" />
         <item itemvalue="JavaScript Debug.question.html (1)" />
@@ -135,6 +137,7 @@
       <workItem from="1631713461651" duration="4466000" />
       <workItem from="1631774503071" duration="8429000" />
       <workItem from="1631797428541" duration="842000" />
+      <workItem from="1631798625928" duration="119000" />
     </task>
     <servers />
   </component>
@@ -142,8 +145,8 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/project$db_init.coverage" NAME="db_init Coverage Results" MODIFIED="1631791060130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dbdata" />
-    <SUITE FILE_PATH="coverage/project$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1631797670946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/project$project.coverage" NAME="project Coverage Results" MODIFIED="1631797142952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/project$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1631798667280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/project$db_init.coverage" NAME="db_init Coverage Results" MODIFIED="1631798682651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dbdata" />
   </component>
 </project>

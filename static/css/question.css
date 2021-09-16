@@ -7,6 +7,7 @@
     --color5: #0080FF; /*파랑(시작버튼)*/
     --color6: #0080FF; /*파랑(태그글)*/
     --color7: #E0E3DA; /*라이트그레이 좀더진함(메인박스 테두리)*/
+    --value1: invert(0%);
 }
 
 :root.dark {
@@ -17,6 +18,7 @@
     --color5: #45D9FD; /*파랑(시작버튼)*/
     --color6: #77919D; /*파랑(태그글)*/
     --color7: #000000; /*라이트그레이 좀더진함(메인박스 테두리)*/
+    --value1: invert(100%);
 }
 /*======================================*/
 
@@ -73,6 +75,7 @@ body {
     height: 18px;
     left: 443px;
     top: 27px;
+    filter: var(--value1)
 }
 
 .wrap {
@@ -371,4 +374,7 @@ body {
 
 #paperplane {
     cursor: pointer
+}
+#heart {
+    filter: var(--value1)
 }

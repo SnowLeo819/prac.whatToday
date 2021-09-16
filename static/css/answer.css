@@ -247,3 +247,11 @@ body {
 #heart {
     filter: var(--value1)
 }
+
+#return {
+    filter: var(--value1);
+}
+
+#share {
+    filter: var(--value1);
+}

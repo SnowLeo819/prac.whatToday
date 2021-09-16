@@ -64,7 +64,6 @@ function getAns(type) {
 
                 function addHtml1(title1, info1, director1, img_link1, link1) {
                     let tempHtml = `
-                            <div class="cardbox">
                                 <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">1</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 17.5px;">${title1}</span>
@@ -73,13 +72,12 @@ function getAns(type) {
                                 <img class="content-img"
                                      src="${img_link1}"
                                      onclick="location.href='${link1}'">
-                            </div>`
+                            `
                     return tempHtml;
                 }
 
                 function addHtml2(title2, info2, director2, img_link2, link2) {
                     let tempHtml = `
-                            <div class="cardbox">
                                 <div class="num"> <span style="font-size: 35px; font-weight: normal; color: white">2</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 17.5px;">${title2}</span>
@@ -88,13 +86,12 @@ function getAns(type) {
                                 <img class="content-img"
                                      src="${img_link2}"
                                      onclick="location.href='${link2}'">
-                            </div>`
+                            `
                     return tempHtml;
                 }
 
                 function addHtml3(title3, info3, director3, img_link3, link3) {
                     let tempHtml = `
-                            <div class="cardbox">
                                 <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">3</span>위</span></div>
                                 <div class="content">
                                     <span style="font-size: 17.5px;">${title3}</span>
@@ -103,7 +100,7 @@ function getAns(type) {
                                 <img class="content-img"
                                      src="${img_link3}"
                                      onclick="location.href='${link3}'">
-                            </div>`
+                            `
                     return tempHtml;
                 }
             } else if (type == 'C') // type C 요리
@@ -115,7 +112,6 @@ function getAns(type) {
 
                 function addHtml1(title1, info1, director1, img_link1, link1) {
                     let tempHtml = `
-                            <div class="cardbox">
                                 <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">1</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 18px;">${title1}</span>
@@ -124,13 +120,12 @@ function getAns(type) {
                                 <img class="content-img"
                                      src="${img_link1}"
                                      onclick="location.href='${link1}'">
-                            </div>`
+                            `
                     return tempHtml;
                 }
 
                 function addHtml2(title2, info2, director2, img_link2, link2) {
                     let tempHtml = `
-                            <div class="cardbox">
                                 <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">2</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 18px;">${title2}</span>
@@ -139,13 +134,12 @@ function getAns(type) {
                                 <img class="content-img"
                                      src="${img_link2}"
                                      onclick="location.href='${link2}'">
-                            </div>`
+                            `
                     return tempHtml;
                 }
 
                 function addHtml3(title3, info3, director3, img_link3, link3) {
                     let tempHtml = `
-                            <div class="cardbox">
                                 <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">3</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 18px;">${title3}</span>
@@ -154,7 +148,7 @@ function getAns(type) {
                                 <img class="content-img"
                                      src="${img_link3}"
                                      onclick="location.href='${link3}'">
-                            </div>`
+                            `
                     return tempHtml;
                 }
             } else if (type == 'D') // type D 독서
@@ -166,7 +160,6 @@ function getAns(type) {
 
                 function addHtml1(title1, genre1, info1, director1, img_link1, link1) {
                     let tempHtml = `
-                            <div class="cardbox">
                                 <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">1</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 18px;">${title1}</span>
@@ -175,13 +168,12 @@ function getAns(type) {
                                 <img class="content-img"
                                      src="${img_link1}"
                                      onclick="location.href='${link1}'">
-                            </div>`
+                            `
                     return tempHtml;
                 }
 
                 function addHtml2(title2, genre2, info2, director2, img_link2, link2) {
                     let tempHtml = `
-                            <div class="cardbox">
                                 <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">2</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 18px;">${title2}</span>
@@ -190,13 +182,12 @@ function getAns(type) {
                                 <img class="content-img"
                                      src="${img_link2}"
                                      onclick="location.href='${link2}'">
-                            </div>`
+                            `
                     return tempHtml;
                 }
 
                 function addHtml3(title3, genre3, info3, director3, img_link3, link3) {
                     let tempHtml = `
-                            <div class="cardbox">
                                 <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">3</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 18px;">${title3}</span>
@@ -205,7 +196,7 @@ function getAns(type) {
                                 <img class="content-img"
                                      src="${img_link3}"
                                      onclick="location.href='${link3}'">
-                            </div>`
+                            `
                     return tempHtml;
                 }
             } else // type F 2,3위 시간 정보가 애매함
@@ -217,7 +208,6 @@ function getAns(type) {
 
                 function addHtml1(title1, genre1, info1, director1, img_link1, link1) {
                     let tempHtml = `
-                            <div class="cardbox" id="top1">
                                 <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">1</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 25px;">${title1}</span>
@@ -226,13 +216,12 @@ function getAns(type) {
                                 <img class="content-img"
                                      src="${img_link1}"
                                      onclick="location.href='${link1}'">
-                            </div>`
+                            `
                     return tempHtml;
                 }
 
                 function addHtml2(title2, genre2, info2, director2, img_link2, link2) {
                     let tempHtml = `
-                            <div class="cardbox" id="top1">
                                 <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">2</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 25px;">${title2}</span>
@@ -241,13 +230,12 @@ function getAns(type) {
                                 <img class="content-img"
                                      src="${img_link2}"
                                      onclick="location.href='${link2}'">
-                            </div>`
+                            `
                     return tempHtml;
                 }
 
                 function addHtml3(title3, genre3, info3, director3, img_link3, link3) {
                     let tempHtml = `
-                            <div class="cardbox" id="top1">
                                 <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">3</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 25px;">${title3}</span>
@@ -256,7 +244,7 @@ function getAns(type) {
                                 <img class="content-img"
                                      src="${img_link3}"
                                      onclick="location.href='${link3}'">
-                            </div>`
+                            `
                     return tempHtml;
                 }
             }

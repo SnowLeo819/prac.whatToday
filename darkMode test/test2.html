@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        :root {
+            --color1: gray;
+            --color2: #ffffff;
+            --color3: #000000;
+        }
+
+        :root.dark {
+            --color1: lightslategrey;
+            --color2: #000000;
+            --color3: #ffffff;
+        }
+
+        body {
+            padding: 30px;
+            background: var(--color2);
+        }
+
+        label {
+            color: var(--color3);
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav li {
+            display: block;
+            line-height: 30px;
+            width: 100px;
+            text-align: center;
+            border: 1px solid var(--color3);
+            color: var(--color2);
+            background: var(--color1);
+        }
+
+        html {
+            background: var(--color3);
+        }
+
+        .themed {
+            display: block;
+            width: 10em;
+            height: 10em;
+            background: var(--color2);
+            color: var(--color3);
+
+    </style>
+    <script>
+
+        const target = document.querySelector('html');
+
+        function toggleDark() {
+            if (target.classList.contains('dark')) {
+                target.classList.remove('dark');
+                localStorage.setItem("theme", "light");
+            } else {
+                target.classList.add('dark');
+                localStorage.setItem("theme", "dark");
+
+    </script>
+
+</head>
+<body>
+
+<button style="height:30px; width:100px" onclick="toggleDark">다크모드</button>
+<input type="checkbox" id="chk" class="dark"><label for="chk">다크모드</label>
+
+<nav>
+    <ul>
+        <li><a href="">메뉴1</a></li>
+        <li><a href="">메뉴2</a></li>
+        <li><a href="">메뉴3</a></li>
+        <li><a href="">메뉴4</a></li>
+    </ul>
+
+    <input class="check" type="checkbox">
+    <div class="themed">Theme</div>
+</nav>
+</body>
+</html>

@@ -1,10 +1,10 @@
 $(document).ready(function () {
-    dragon()
-    showLike()
     let type = getType()
     let ansType = manyKeyword(type);
     getAns(ansType);
     // $('.content-img').attr('width', '100'); 이미지 width 수정 test 작동 x
+    dragon()
+    showLike()
 });
 
 function getType() {

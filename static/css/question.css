@@ -1,7 +1,7 @@
 /*다크모드 지정을 위한 색 변수 지정*/
 :root {
     --color1: #FFEEE4; /*배경(뒤쪽배경)*/
-    --color2: #ffffff; /*흰색(메인박스 바탕, 질문지글상자)*/
+    --color2: #FFFFFF; /*흰색(메인박스 바탕, 질문지글상자)*/
     --color3: #000000; /*검정(기본글, 좋아요, 공유하기, 다시하기)*/
     --color4: #EDEDED; /*라이트그레이(질문지바탕)*/
     --color5: #0080FF; /*파랑(시작버튼)*/
@@ -65,7 +65,6 @@ body {
     line-height: 23px;
     display: flex;
     align-items: center;
-    color: var(--color3);
 }
 
 .more {

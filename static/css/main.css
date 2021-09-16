@@ -1,19 +1,40 @@
+/*다크모드 지정을 위한 색 변수 지정*/
+:root {
+    --color1: #FFEEE4; /*배경(뒤쪽배경)*/
+    --color2: #ffffff; /*흰색(메인박스 바탕, 질문지글상자)*/
+    --color3: #000000; /*검정(기본글, 좋아요, 공유하기, 다시하기)*/
+    --color4: #EDEDED; /*라이트그레이(질문지바탕)*/
+    --color5: #0080FF; /*파랑(시작버튼)*/
+    --color6: #0080FF; /*파랑(태그글)*/
+    --color7: #E0E3DA; /*라이트그레이 좀더진함(메인박스 테두리)*/
+}
+
+:root.dark {
+    --color1: #121212; /*배경(뒤쪽배경)*/
+    --color2: #3F4040; /*진회색(메인박스 바탕, 질문지글상자)*/
+    --color3: #FFFFFF; /*흰색(기본글, 좋아요, 공유하기, 다시하기)*/
+    --color4: #5E5E5F; /*그레이(메인박스 테두리,질문지바탕)*/
+    --color5: #45D9FD; /*파랑(시작버튼)*/
+    --color6: #77919D; /*파랑(태그글)*/
+    --color7: #5E5E5F; /*라이트그레이 좀더진함(메인박스 테두리)*/
+}
+/*======================================*/
 
 * {
     font-family: 'IBM Plex Sans KR', sans-serif;
+    color: var(--color3);
 }
 
 body {
-    background-color: #FFEEE4;
+    background-color: var(--color1);
 }
 
 .main_block {
     position: relative;
     width: 491px;
     height: 872px;
-
-    background: #FFFFFF;
-    border: 1px solid #E0E3DA;
+    background: var(--color2);
+    border: 1px solid var(--color7);
     box-sizing: border-box;
     margin: 30px auto 0px auto;
 }
@@ -24,9 +45,7 @@ body {
     height: 45px;
     left: 15px;
     top: 16px;
-
     border-radius: 100px;
-
 }
 
 .username {
@@ -35,15 +54,12 @@ body {
     height: 41px;
     left: 83px;
     top: 18px;
-
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 23px;
     display: flex;
     align-items: center;
-
-    color: #000000;
 }
 
 .openmore {
@@ -77,7 +93,6 @@ body {
     height: 35px;
     left: 69px;
     top: 473px;
-
 }
 
 .paperplane {
@@ -86,7 +101,6 @@ body {
     height: 35px;
     left: 113px;
     top: 473px;
-
 }
 
 .bookmark {
@@ -95,7 +109,6 @@ body {
     height: 30px;
     left: 440px;
     top: 470px;
-
 }
 
 .liketext {
@@ -104,15 +117,12 @@ body {
     height: 23px;
     left: 19px;
     top: 521px;
-
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 23px;
     display: flex;
     align-items: center;
-
-    color: #000000;
 }
 
 .username2 {
@@ -121,15 +131,12 @@ body {
     height: 46px;
     left: 19px;
     top: 544px;
-
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
     display: flex;
     align-items: center;
-
-    color: #000000;
 }
 
 .tagtitle {
@@ -138,17 +145,13 @@ body {
     height: 46px;
     left: 123px;
     top: 557px;
-
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
-    /* or 139% */
-
     display: flex;
     align-items: center;
-
-    color: #0080FF;
+    color: var(--color6);
 }
 
 .morepage {
@@ -157,19 +160,17 @@ body {
     height: 46px;
     left: 237px;
     top: 570px;
-
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
     display: flex;
     align-items: center;
-
-    color: black;
+    color: var(--color3);
     clip: rect(0 0 0 0);
 }
 
-.startbtn {
+#startbtn {
     position: absolute;
     width: 457px;
     height: 78px;
@@ -192,8 +193,6 @@ body {
     display: flex;
     align-items: center;
     color: #7C7877;
-
-
 }
 
 .hiddentag {
@@ -208,7 +207,7 @@ body {
     line-height: 21px;
     display: flex;
     align-items: center;
-    color: #0080FF;
+    color: var(--color6);
     white-space: nowrap;
     visibility: hidden;
 }
@@ -222,16 +221,5 @@ body {
     visibility: hidden;
 }
 
-.showmore {
-    position: absolute;
-    width: 130px;
-    height: 50px;
-    left: 460px;
-    top: 40px;
-    border: thin solid lightslategray;
-    background-color: white;
-    z-index: 1;
-
-    visibility: hidden;
-}
-
+#heart, #toggleDark {
+    color: var(--color3);

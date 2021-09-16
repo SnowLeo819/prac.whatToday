@@ -9,6 +9,7 @@
     --color7: #E0E3DA; /*라이트그레이 좀더진함(메인박스 테두리)*/
     --color8: #7C7877; /*언더라인*/
     --color9: #7C7877; /*aboutus만 팔로잉*/
+    --value1: invert(0%);
 }
 
 :root.dark {
@@ -21,6 +22,7 @@
     --color7: #5E5E5F; /*라이트그레이 좀더진함(메인박스 테두리)*/
     --color8: #7C7877; /*aboutus만 팔로잉, 언더라인*/
     --color9: #ffffff; /*aboutus만 팔로잉*/
+    --value1: invert(100%);
 }
 /*======================================*/
 
@@ -50,6 +52,7 @@ body {
     height: 45px;
     left: 15px;
     top: 16px;
+    filter: var(--value1);
 }
 
 .username {

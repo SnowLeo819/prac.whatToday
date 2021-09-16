@@ -133,6 +133,8 @@ body {
     position: absolute;
     left: 40px;
     z-index: 1;
+
+    border-radius: 10px;
 }
 
 .cardbox {

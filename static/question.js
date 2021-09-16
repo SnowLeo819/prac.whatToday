@@ -1,3 +1,4 @@
+//페이지 로드되면 바로 실행
 $(document).ready(function () {
     getQuiz(1);
     dragon();
@@ -63,6 +64,8 @@ function ans_click(x) {
     getQuiz(idx, x)
 }
 
+//좋아요 하트변환 & 좋아요 DB반영 부분
+
 var cnt = 1;
 
 function likered() {
@@ -82,6 +85,7 @@ function likered() {
     };
 }
 
+// 마스코트 불뿜기!
 function dragon() {
 $('#paperplane').click(function () {
     if ($('.breathe').hasClass('breathe')) {
@@ -93,6 +97,7 @@ $('#paperplane').click(function () {
 });
 }
 
+// 좋아요 값 불러오기
 function showLike() {
     $.ajax({
         type: 'GET',
@@ -109,7 +114,7 @@ function showLike() {
     });
 }
 
-
+// 좋아요 추가&제거 동작
 function likePlus() {
     $.ajax({
         type: 'POST',
@@ -132,4 +137,27 @@ function likeMinus() {
             return showLike()
         }
     });
+}
+
+// 다크모드 동작
+document.getElementById("toggleDark").addEventListener("click", () => {
+    const html = document.documentElement;
+
+    if (html.classList.contains("dark")) {
+        html.classList.remove("dark");
+        localStorage.setItem("darkTheme", "false");
+    } else {
+        html.classList.add("dark");
+        localStorage.setItem("darkTheme", "true");
+    }
+});
+
+const storedTheme = localStorage.getItem("darkTheme");
+
+if (storedTheme !== null) {
+    if (storedTheme === "true") {
+        document.documentElement.classList.add("dark");
+    }
+} else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    document.documentElement.classList.add("dark");
 }

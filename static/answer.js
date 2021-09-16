@@ -65,7 +65,7 @@ function getAns(type) {
                 function addHtml1(title1, info1, director1, img_link1, link1) {
                     let tempHtml = `
                             <div class="cardbox">
-                                <div class="num"><span style="font-size: 35px; font-weight: normal">1</span>위</div>
+                                <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">1</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 17.5px;">${title1}</span>
                                     <br>  <br><br>${info1} <br>${director1}
@@ -80,7 +80,7 @@ function getAns(type) {
                 function addHtml2(title2, info2, director2, img_link2, link2) {
                     let tempHtml = `
                             <div class="cardbox">
-                                <div class="num"> <span style="font-size: 35px; font-weight: normal">2</span>위</div>
+                                <div class="num"> <span style="font-size: 35px; font-weight: normal; color: white">2</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 17.5px;">${title2}</span>
                                     <br>  <br><br>${info2} <br>${director2}
@@ -95,7 +95,7 @@ function getAns(type) {
                 function addHtml3(title3, info3, director3, img_link3, link3) {
                     let tempHtml = `
                             <div class="cardbox">
-                                <div class="num"><span style="font-size: 35px; font-weight: normal">3</span>위</span></div>
+                                <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">3</span>위</span></div>
                                 <div class="content">
                                     <span style="font-size: 17.5px;">${title3}</span>
                                     <br>  <br><br>${info3} <br>${director3}
@@ -116,7 +116,7 @@ function getAns(type) {
                 function addHtml1(title1, info1, director1, img_link1, link1) {
                     let tempHtml = `
                             <div class="cardbox">
-                                <div class="num"><span style="font-size: 35px; font-weight: normal">1</span>위</div>
+                                <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">1</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 18px;">${title1}</span>
                                     <br>  <br><br>${info1} <br>${director1}
@@ -131,7 +131,7 @@ function getAns(type) {
                 function addHtml2(title2, info2, director2, img_link2, link2) {
                     let tempHtml = `
                             <div class="cardbox">
-                                <div class="num"><span style="font-size: 35px; font-weight: normal">2</span>위</div>
+                                <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">2</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 18px;">${title2}</span>
                                     <br>  <br><br>${info2} <br>${director2}
@@ -146,7 +146,7 @@ function getAns(type) {
                 function addHtml3(title3, info3, director3, img_link3, link3) {
                     let tempHtml = `
                             <div class="cardbox">
-                                <div class="num"><span style="font-size: 35px; font-weight: normal">3</span>위</div>
+                                <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">3</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 18px;">${title3}</span>
                                     <br>  <br><br>${info3} <br>${director3}
@@ -167,7 +167,7 @@ function getAns(type) {
                 function addHtml1(title1, genre1, info1, director1, img_link1, link1) {
                     let tempHtml = `
                             <div class="cardbox">
-                                <div class="num"><span style="font-size: 35px; font-weight: normal">1</span>위</div>
+                                <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">1</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 18px;">${title1}</span>
                                     <br><span style="color: #0080FF;">${genre1}</span><br><br> 출판사 : ${info1} <br> 저자 : ${director1}
@@ -182,7 +182,7 @@ function getAns(type) {
                 function addHtml2(title2, genre2, info2, director2, img_link2, link2) {
                     let tempHtml = `
                             <div class="cardbox">
-                                <div class="num"><span style="font-size: 35px; font-weight: normal">2</span>위</div>
+                                <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">2</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 18px;">${title2}</span>
                                     <br><span style="color: #0080FF;">${genre2}</span><br><br> 출판사 : ${info2} <br> 저자 : ${director2}
@@ -197,7 +197,7 @@ function getAns(type) {
                 function addHtml3(title3, genre3, info3, director3, img_link3, link3) {
                     let tempHtml = `
                             <div class="cardbox">
-                                <div class="num"><span style="font-size: 35px; font-weight: normal">3</span>위</div>
+                                <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">3</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 18px;">${title3}</span>
                                     <br><span style="color: #0080FF;">${genre3}</span><br><br> 출판사 : ${info3} <br> 저자 : ${director3}
@@ -218,7 +218,7 @@ function getAns(type) {
                 function addHtml1(title1, genre1, info1, director1, img_link1, link1) {
                     let tempHtml = `
                             <div class="cardbox" id="top1">
-                                <div class="num"><span style="font-size: 35px; font-weight: normal">1</span>위</div>
+                                <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">1</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 25px;">${title1}</span>
                                     <br> <span style="color: #0080FF;">${genre1}</span> <br><br>${info1} <br>${director1}
@@ -233,7 +233,7 @@ function getAns(type) {
                 function addHtml2(title2, genre2, info2, director2, img_link2, link2) {
                     let tempHtml = `
                             <div class="cardbox" id="top1">
-                                <div class="num"><span style="font-size: 35px; font-weight: normal">2</span>위</div>
+                                <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">2</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 25px;">${title2}</span>
                                     <br> <span style="color: #0080FF;">${genre2}</span> <br><br> <br>${director2}
@@ -248,7 +248,7 @@ function getAns(type) {
                 function addHtml3(title3, genre3, info3, director3, img_link3, link3) {
                     let tempHtml = `
                             <div class="cardbox" id="top1">
-                                <div class="num"><span style="font-size: 35px; font-weight: normal">3</span>위</div>
+                                <div class="num"><span style="font-size: 35px; font-weight: normal; color: white">3</span>위</div>
                                 <div class="content">
                                     <span style="font-size: 25px;">${title3}</span>
                                     <br> <span style="color: #0080FF;">${genre3}</span> <br><br><br>${director3}

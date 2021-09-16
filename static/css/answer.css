@@ -146,13 +146,14 @@ body {
 .num {
     width: 45px;
     height: 80px;
+    font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 35px;
     display: flex;
     align-items: center;
-    color: var(--color2);
+    color: #ffffff;
     -webkit-text-stroke-width: 0.8px;
 	-webkit-text-stroke-color: #c5c6b6;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);

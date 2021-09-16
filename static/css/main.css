@@ -36,7 +36,7 @@ body {
     background: var(--color2);
     border: 1px solid var(--color7);
     box-sizing: border-box;
-    margin: 30px auto 0px auto;
+    margin: 30px auto 0 auto;
 }
 
 .profile {
@@ -170,7 +170,7 @@ body {
     clip: rect(0 0 0 0);
 }
 
-#startbtn {
+.startbtn {
     position: absolute;
     width: 457px;
     height: 78px;
@@ -223,3 +223,4 @@ body {
 
 #heart, #toggleDark {
     color: var(--color3);
+}

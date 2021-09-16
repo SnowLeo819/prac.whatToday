@@ -6,7 +6,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/answer.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/answer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/answer.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/answer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/answer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/answer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +53,10 @@
     <configuration name="aboutus.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project/templates/aboutus.html?_ij_reload" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="question.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project/templates/question.html?_ij_reload" useBuiltInWebServerPort="true">
+    <configuration name="map.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project/templates/map.html?_ij_reload" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="question.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project/templates/question.html?_ij_reload" useBuiltInWebServerPort="true">
+    <configuration name="question.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project/templates/question.html?_ij_reload" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="db_init" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -64,12 +67,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dbdata" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db_init.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dbdata/db_init.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -118,10 +121,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Flask server.Flask (app.py)" />
+        <item itemvalue="Python.db_init" />
+        <item itemvalue="JavaScript Debug.map.html" />
         <item itemvalue="JavaScript Debug.aboutus.html" />
         <item itemvalue="JavaScript Debug.question.html (1)" />
-        <item itemvalue="JavaScript Debug.question.html" />
-        <item itemvalue="Python.db_init" />
       </list>
     </recent_temporary>
   </component>
@@ -142,8 +145,8 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/project$db_init.coverage" NAME="db_init Coverage Results" MODIFIED="1631713904827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/project$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1631786047548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/project$project.coverage" NAME="project Coverage Results" MODIFIED="1631782788366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/project$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1631787389726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/project$db_init.coverage" NAME="db_init Coverage Results" MODIFIED="1631786707025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dbdata" />
   </component>
 </project>

@@ -83,7 +83,7 @@ function likeMinus() {
     });
 }
 
-// 다크모드 동작
+// 다크모드 동작구문
 document.getElementById("toggleDark").addEventListener("click", () => {
     const html = document.documentElement;
 

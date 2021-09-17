@@ -398,10 +398,27 @@ function displayMarker(place) {
         position: new kakao.maps.LatLng(place.y, place.x)
     });
 
-    // 마커에 클릭이벤트를 등록합니다
-    kakao.maps.event.addListener(marker, 'click', function () {
-        // 마커를 클릭하면 장소명이 인포윈도우에 표출됩니다
-        infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name + '</div>');
-        infowindow.open(map, marker);
+// 커스텀 오버레이에 표시할 컨텐츠 입니다
+// 커스텀 오버레이는 아래와 같이 사용자가 자유롭게 컨텐츠를 구성하고 이벤트를 제어할 수 있기 때문에
+// 별도의 이벤트 메소드를 제공하지 않습니다
+    var content = '<div class="placeInfo">' + place.place_name + '</div>';
+
+// 마커 위에 커스텀오버레이를 표시합니다
+    var overlay = new kakao.maps.CustomOverlay({
+        content: content,
+        map: map,
+        position: marker.getPosition()
     });
+
+    overlay.setMap(null);
+
+    // 마커에 mouseover 이벤트를 등록한다
+    kakao.maps.event.addListener(marker, 'click', function () {
+        overlay.setMap(map);
+    });
+
+    // 마커에 mouseout 이벤트 등록
+    kakao.maps.event.addListener(marker, 'mouseout', function () {
+        overlay.setMap(null)
+    })
 }
